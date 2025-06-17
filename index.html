@@ -20,17 +20,31 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .header {
-            text-align: center;
             background: linear-gradient(135deg, #ffd700, #ffed4e);
             margin: -30px -30px 30px -30px;
             padding: 20px 30px;
             border-radius: 8px 8px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .header h1 {
             margin: 0;
             color: #333;
             font-size: 24px;
             font-weight: bold;
+            text-align: center;
+            flex: 1;
+        }
+        .logo-left, .logo-right {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        .logo-left img, .logo-right img {
+            max-height: 60px;
+            max-width: 120px;
+            object-fit: contain;
         }
         .info-fields {
             background: #f5f5f5;
@@ -124,7 +138,13 @@
 <body>
     <div class="container">
         <div class="header">
+            <div class="logo-left">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDk0IiBoZWlnaHQ9IjI5NCIgdmlld0JveD0iMCAwIDQ5NCAyOTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xXzEpIj4KPGVsbGlwc2UgY3g9IjI0NyIgY3k9IjE0NyIgcng9IjI0NyIgcnk9IjE0NyIgZmlsbD0id2hpdGUiLz4KPGVsbGlwc2UgY3g9IjI0NyIgY3k9IjE0NyIgcng9IjI0NyIgcnk9IjE0NyIgc3Ryb2tlPSIjMzA3MEJGIiBzdHJva2Utd2lkdGg9IjQiLz4KPHBhdGggZD0iTTE2MS45IDExMS42SDE5OC42VjI3OS43SDE2MS45VjExMS42WiIgZmlsbD0iIzMwNzBCRiIvPgo8cGF0aCBkPSJNMjM2LjkgMjcwLjNWMjM5LjdIMjkwQzMwNS41IDIzOS43IDMxNyAyMjguMiAzMTcgMjEyLjdWMTY0QzMxNyAxNDguNSAzMDUuNSAxMzcgMjkwIDEzN0gyNjcuMkMyNTUuNyAxMzcgMjQ2LjUgMTI3LjggMjQ2LjUgMTE2LjNWMTA2LjJDMjQ2LjUgOTQuNyAyNTUuNyA4NS41IDI2Ny4yIDg1LjVIMzE3VjExNi4xSDI2Ny4yQzI1NS43IDExNi4xIDI0Ni41IDEyNS4zIDI0Ni41IDEzNi44VjE0Ni45QzI0Ni41IDE1OC40IDI1NS43IDE2Ny42IDI2Ny4yIDE2Ny42SDI5MEMzMDUuNSAxNjcuNiAzMTcgMTc5LjEgMzE3IDE5NC42VjI0My4zQzMxNyAyNTguOCAzMDUuNSAyNzAuMyAyOTAgMjcwLjNIMjM2LjlaIiBmaWxsPSIjMzA3MEJGIi8+CjxwYXRoIGQ9Ik00ODguMSAxMTEuNkg1MjQuOFYyNzkuN0g0ODguMVYxMTEuNloiIGZpbGw9IiMzMDcwQkYiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xXzEiPgo8cmVjdCB3aWR0aD0iNDk0IiBoZWlnaHQ9IjI5NCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="ISI Logo">
+            </div>
             <h1>Lista de Verificación para Trabajos en Altura</h1>
+            <div class="logo-right">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzkwIiBoZWlnaHQ9IjQ4NiIgdmlld0JveD0iMCAwIDc5MCA0ODYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjI5IiB5PSIxNjIiIHdpZHRoPSI3MzIiIGhlaWdodD0iMTI4IiBmaWxsPSIjRkZEQjAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iNDAiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIj5JUEFGLm9yZzwvdGV4dD4KPHRleHQgeD0iMzAiIHk9IjM0MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iYmxhY2siPkNlbnRybyBkZSBGb3JtYWNpw7NuPC90ZXh0Pgo8dGV4dCB4PSIxOTAiIHk9IjQ1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjkwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iYmxhY2siPkhvbW9sb2dhZG88L3RleHQ+CjxwYXRoIGQ9Ik0zNTAgNjBMMzk1IDE2MEgzMDVMMzUwIDYwWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" alt="IPAF Logo">
+            </div>
         </div>
 
         <div class="info-fields">
