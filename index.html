@@ -26,25 +26,21 @@
             border-radius: 8px 8px 0 0;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            gap: 20px;
         }
         .header h1 {
             margin: 0;
             color: #333;
             font-size: 24px;
             font-weight: bold;
-            text-align: center;
             flex: 1;
         }
-        .logo-left, .logo-right {
+        .logo-left {
             flex: 0 0 auto;
-            display: flex;
-            align-items: center;
         }
-        .logo-left img, .logo-right img {
-            max-height: 60px;
-            max-width: 120px;
-            object-fit: contain;
+        .logo-left svg {
+            width: 80px;
+            height: 57px;
         }
         .info-fields {
             background: #f5f5f5;
@@ -139,12 +135,14 @@
     <div class="container">
         <div class="header">
             <div class="logo-left">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDk0IiBoZWlnaHQ9IjI5NCIgdmlld0JveD0iMCAwIDQ5NCAyOTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xXzEpIj4KPGVsbGlwc2UgY3g9IjI0NyIgY3k9IjE0NyIgcng9IjI0NyIgcnk9IjE0NyIgZmlsbD0id2hpdGUiLz4KPGVsbGlwc2UgY3g9IjI0NyIgY3k9IjE0NyIgcng9IjI0NyIgcnk9IjE0NyIgc3Ryb2tlPSIjMzA3MEJGIiBzdHJva2Utd2lkdGg9IjQiLz4KPHBhdGggZD0iTTE2MS45IDExMS42SDE5OC42VjI3OS43SDE2MS45VjExMS42WiIgZmlsbD0iIzMwNzBCRiIvPgo8cGF0aCBkPSJNMjM2LjkgMjcwLjNWMjM5LjdIMjkwQzMwNS41IDIzOS43IDMxNyAyMjguMiAzMTcgMjEyLjdWMTY0QzMxNyAxNDguNSAzMDUuNSAxMzcgMjkwIDEzN0gyNjcuMkMyNTUuNyAxMzcgMjQ2LjUgMTI3LjggMjQ2LjUgMTE2LjNWMTA2LjJDMjQ2LjUgOTQuNyAyNTUuNyA4NS41IDI2Ny4yIDg1LjVIMzE3VjExNi4xSDI2Ny4yQzI1NS43IDExNi4xIDI0Ni41IDEyNS4zIDI0Ni41IDEzNi44VjE0Ni45QzI0Ni41IDE1OC40IDI1NS43IDE2Ny42IDI2Ny4yIDE2Ny42SDI5MEMzMDUuNSAxNjcuNiAzMTcgMTc5LjEgMzE3IDE5NC42VjI0My4zQzMxNyAyNTguOCAzMDUuNSAyNzAuMyAyOTAgMjcwLjNIMjM2LjlaIiBmaWxsPSIjMzA3MEJGIi8+CjxwYXRoIGQ9Ik00ODguMSAxMTEuNkg1MjQuOFYyNzkuN0g0ODguMVYxMTEuNloiIGZpbGw9IiMzMDcwQkYiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xXzEiPgo8cmVjdCB3aWR0aD0iNDk0IiBoZWlnaHQ9IjI5NCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K" alt="ISI Logo">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80px" height="57px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 428">
+                <g><path style="opacity:0.815" fill="#216eb7" d="M 272.5,28.5 C 326.656,25.689 379.323,33.189 430.5,51C 472.921,66.4461 509.087,90.9461 539,124.5C 585.158,187.11 583.491,248.443 534,308.5C 497.493,346.184 453.659,371.684 402.5,385C 314.243,408.548 228.243,402.215 144.5,366C 111.871,350.769 83.7042,329.602 60,302.5C 15.3333,243.167 15.3333,183.833 60,124.5C 89.9127,90.9461 126.079,66.4461 168.5,51C 202.37,39.1947 237.037,31.6947 272.5,28.5 Z M 287.5,35.5 C 352.647,33.622 413.98,47.7887 471.5,78C 501.711,94.208 526.211,116.708 545,145.5C 574.86,199.13 570.86,250.13 533,298.5C 505.592,329.554 472.426,352.387 433.5,367C 339.507,400.972 246.174,399.305 153.5,362C 119.389,347.539 90.2226,326.372 66,298.5C 32.6367,257.294 25.6367,211.961 45,162.5C 61.5243,129.308 85.691,103.141 117.5,84C 170.102,53.5167 226.769,37.3501 287.5,35.5 Z"/></g>
+                <g><path style="opacity:0.952" fill="#216eb7" d="M 402.5,109.5 C 414.833,109.5 427.167,109.5 439.5,109.5C 439.5,178.833 439.5,248.167 439.5,317.5C 427.167,317.5 414.833,317.5 402.5,317.5C 402.5,248.167 402.5,178.833 402.5,109.5 Z"/></g>
+                <g><path style="opacity:0.958" fill="#216eb7" d="M 270.5,110.5 C 301.168,110.333 331.835,110.5 362.5,111C 363.488,123.086 363.822,135.253 363.5,147.5C 332.498,147.333 301.498,147.5 270.5,148C 260.015,151.945 255.015,159.611 255.5,171C 254.785,180.233 258.118,187.566 265.5,193C 289.469,194.043 313.469,195.043 337.5,196C 365.864,205.551 380.198,225.385 380.5,255.5C 379.665,286.718 364.331,306.551 334.5,315C 301.502,315.5 268.502,315.667 235.5,315.5C 235.5,303.167 235.5,290.833 235.5,278.5C 267.168,278.667 298.835,278.5 330.5,278C 339.593,273.326 344.259,265.826 344.5,255.5C 344.02,246.035 340.02,238.535 332.5,233C 308.188,231.979 283.855,230.979 259.5,230C 232.684,219.912 219.018,200.412 218.5,171.5C 218.723,145.873 230.057,127.039 252.5,115C 258.479,112.839 264.479,111.339 270.5,110.5 Z"/></g>
+                <g><path style="opacity:0.957" fill="#216eb7" d="M 159.5,111.5 C 171.833,111.5 184.167,111.5 196.5,111.5C 196.5,180.5 196.5,249.5 196.5,318.5C 184.167,318.5 171.833,318.5 159.5,318.5C 159.5,249.5 159.5,180.5 159.5,111.5 Z"/></g>
+                </svg>
             </div>
             <h1>Lista de Verificación para Trabajos en Altura</h1>
-            <div class="logo-right">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzkwIiBoZWlnaHQ9IjQ4NiIgdmlld0JveD0iMCAwIDc5MCA0ODYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjI5IiB5PSIxNjIiIHdpZHRoPSI3MzIiIGhlaWdodD0iMTI4IiBmaWxsPSIjRkZEQjAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPHRleHQgeD0iNDAiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjEwMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9ImJsYWNrIj5JUEFGLm9yZzwvdGV4dD4KPHRleHQgeD0iMzAiIHk9IjM0MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iYmxhY2siPkNlbnRybyBkZSBGb3JtYWNpw7NuPC90ZXh0Pgo8dGV4dCB4PSIxOTAiIHk9IjQ1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjkwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iYmxhY2siPkhvbW9sb2dhZG88L3RleHQ+CjxwYXRoIGQ9Ik0zNTAgNjBMMzk1IDE2MEgzMDVMMzUwIDYwWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" alt="IPAF Logo">
-            </div>
         </div>
 
         <div class="info-fields">
